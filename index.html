@@ -1,1 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cosmetic Ingredient Classifier</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f8eaf0;
+            text-align: center;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            color: #8e3a62;
+        }
+
+        input {
+            width: 80%;
+            padding: 14px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 13px 25px;
+            border: none;
+            border-radius: 10px;
+            background: #8e3a62;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #result {
+            margin-top: 25px;
+            padding: 20px;
+            background: #f5f5f5;
+            border-radius: 12px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>🧴 Cosmetic Ingredient Classifier</h1>
+
+    <p>Enter a cosmetic ingredient to learn its classification.</p>
+
+    <input type="text" id="ingredient" placeholder="Example: Glycerin">
+
+    <br>
+
+    <button onclick="classifyIngredient()">Classify Ingredient</button>
+
+    <div id="result"></div>
+
+</div>
+
+<script>
+function classifyIngredient() {
+
+    let ingredient = document.getElementById("ingredient").value
+        .trim()
+        .toLowerCase();
+
+    let result = document.getElementById("result");
+
+    let ingredients = {
+        "glycerin": ["Humectant", "Helps retain moisture in the skin."],
+        "hyaluronic acid": ["Humectant", "Helps attract and retain water."],
+        "salicylic acid": ["Exfoliant", "Helps remove dead skin cells."],
+        "vitamin e": ["Antioxidant", "Helps protect the skin from oxidative stress."],
+        "fragrance": ["Fragrance", "Used to provide a pleasant scent."],
+        "paraben": ["Preservative", "Used to help prevent microbial growth."]
+    };
+
+    if (ingredients[ingredient]) {
+
+        result.innerHTML =
+            "<h2>Result</h2>" +
+            "<p><b>Ingredient:</b> " + ingredient + "</p>" +
+            "<p><b>Classification:</b> " +
+            ingredients[ingredient][0] + "</p>" +
+            "<p><b>Function:</b> " +
+            ingredients[ingredient][1] + "</p>";
+
+    } else {
+
+        result.innerHTML =
+            "<h2>Ingredient Not Found</h2>" +
+            "<p>Try another ingredient such as Glycerin, Vitamin E or Salicylic Acid.</p>";
+    }
+
+    result.style.display = "block";
+}
+</script>
+
+</body>
+</html>
