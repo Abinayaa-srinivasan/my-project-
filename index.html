@@ -326,42 +326,212 @@
 
             let ingredients = {
 
-                "glycerin": {
-                    category: "Humectant",
-                    function: "Helps attract and retain moisture."
-                },
+    "water": {
+        category: "Solvent",
+        function: "Dissolves or carries other ingredients in the formulation."
+    },
 
-                "hyaluronic acid": {
-                    category: "Humectant",
-                    function: "Helps retain water and improve skin hydration."
-                },
+    "glycerin": {
+        category: "Humectant",
+        function: "Helps attract and retain moisture."
+    },
 
-                "salicylic acid": {
-                    category: "Exfoliant",
-                    function: "Helps remove dead skin cells."
-                },
+    "hyaluronic acid": {
+        category: "Humectant",
+        function: "Helps attract and retain water."
+    },
 
-                "vitamin e": {
-                    category: "Antioxidant",
-                    function: "Helps protect cosmetic formulations from oxidation."
-                },
+    "sodium hyaluronate": {
+        category: "Humectant",
+        function: "A form of hyaluronic acid used for hydration."
+    },
 
-                "fragrance": {
-                    category: "Fragrance",
-                    function: "Used to provide a pleasant scent."
-                },
+    "propylene glycol": {
+        category: "Humectant / Solvent",
+        function: "Helps retain moisture and dissolve other ingredients."
+    },
 
-                "paraben": {
-                    category: "Preservative",
-                    function: "Used to help prevent microbial growth."
-                },
+    "butylene glycol": {
+        category: "Humectant / Solvent",
+        function: "Helps retain moisture and improve product texture."
+    },
 
-                "phenoxyethanol": {
-                    category: "Preservative",
-                    function: "Used as a preservative in cosmetic formulations."
-                }
+    "sorbitol": {
+        category: "Humectant",
+        function: "Helps retain moisture."
+    },
 
-            };
+    "panthenol": {
+        category: "Humectant / Conditioning Agent",
+        function: "Helps moisturize and condition skin and hair."
+    },
+
+    "aloe vera": {
+        category: "Skin Conditioning Agent",
+        function: "Used to condition and moisturize the skin."
+    },
+
+    "squalane": {
+        category: "Emollient",
+        function: "Helps soften and smooth the skin."
+    },
+
+    "dimethicone": {
+        category: "Emollient / Skin Protectant",
+        function: "Helps smooth the skin and form a protective barrier."
+    },
+
+    "petrolatum": {
+        category: "Occlusive",
+        function: "Forms a barrier that helps reduce moisture loss."
+    },
+
+    "mineral oil": {
+        category: "Emollient / Occlusive",
+        function: "Helps soften skin and reduce moisture loss."
+    },
+
+    "coconut oil": {
+        category: "Emollient",
+        function: "Helps soften and condition the skin."
+    },
+
+    "jojoba oil": {
+        category: "Emollient",
+        function: "Helps soften and condition the skin."
+    },
+
+    "shea butter": {
+        category: "Emollient",
+        function: "Helps soften and condition the skin."
+    },
+
+    "beeswax": {
+        category: "Occlusive / Structuring Agent",
+        function: "Helps form a protective layer and gives products structure."
+    },
+
+    "cetyl alcohol": {
+        category: "Emollient / Thickener",
+        function: "Helps soften skin and improve product consistency."
+    },
+
+    "stearyl alcohol": {
+        category: "Emollient / Thickener",
+        function: "Helps condition skin and stabilize product texture."
+    },
+
+    "stearic acid": {
+        category: "Emollient / Surfactant",
+        function: "Helps condition skin and support product structure."
+    },
+
+    "salicylic acid": {
+        category: "Exfoliant",
+        function: "Helps remove dead skin cells from the skin surface."
+    },
+
+    "citric acid": {
+        category: "pH Adjuster / Exfoliant",
+        function: "Can adjust product pH and is also used in exfoliating formulations."
+    },
+
+    "lactic acid": {
+        category: "Exfoliant / Humectant",
+        function: "Used for exfoliation and can also help retain moisture."
+    },
+
+    "glycolic acid": {
+        category: "Exfoliant",
+        function: "An alpha hydroxy acid used for exfoliation."
+    },
+
+    "ascorbic acid": {
+        category: "Antioxidant",
+        function: "Vitamin C that provides antioxidant activity."
+    },
+
+    "tocopherol": {
+        category: "Antioxidant",
+        function: "Vitamin E used for antioxidant and conditioning purposes."
+    },
+
+    "niacinamide": {
+        category: "Skin Conditioning Agent",
+        function: "Vitamin B3 derivative commonly used in skin-conditioning formulations."
+    },
+
+    "zinc oxide": {
+        category: "Skin Protectant / Colorant",
+        function: "Used in various cosmetic formulations including skin-protective products."
+    },
+
+    "titanium dioxide": {
+        category: "Colorant / Opacifying Agent",
+        function: "Used to provide opacity and white color in formulations."
+    },
+
+    "kaolin": {
+        category: "Absorbent",
+        function: "Helps absorb oils and is commonly used in masks and powders."
+    },
+
+    "xanthan gum": {
+        category: "Thickener / Stabilizer",
+        function: "Helps thicken and stabilize cosmetic formulations."
+    },
+
+    "carbomer": {
+        category: "Thickener / Gelling Agent",
+        function: "Helps create gels and increase product viscosity."
+    },
+
+    "lecithin": {
+        category: "Emulsifier / Skin Conditioning Agent",
+        function: "Helps mix ingredients and condition the skin."
+    },
+
+    "polysorbate 20": {
+        category: "Emulsifier / Solubilizer",
+        function: "Helps disperse oils and fragrances in water-based formulations."
+    },
+
+    "sodium lauryl sulfate": {
+        category: "Surfactant",
+        function: "Helps cleanse and produce foam."
+    },
+
+    "cocamidopropyl betaine": {
+        category: "Surfactant",
+        function: "A cleansing and foam-supporting surfactant."
+    },
+
+    "phenoxyethanol": {
+        category: "Preservative",
+        function: "Helps protect cosmetic formulations against microbial growth."
+    },
+
+    "methylparaben": {
+        category: "Preservative",
+        function: "A preservative used to help control microbial growth."
+    },
+
+    "propylparaben": {
+        category: "Preservative",
+        function: "A preservative used to help control microbial growth."
+    },
+
+    "fragrance": {
+        category: "Fragrance",
+        function: "Used to provide or improve the scent of a cosmetic product."
+    },
+
+    "disodium EDTA": {
+        category: "Chelating Agent",
+        function: "Helps stabilize formulations by binding certain metal ions."
+    }
+
+};
 
 
             if (ingredients[input]) {
